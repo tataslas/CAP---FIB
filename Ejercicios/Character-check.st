@@ -1,0 +1,1 @@
+'From Pharo6.0 of 13 May 2016 [Latest update: #60547] on 5 October 2019 at 12:25:01.825985 pm'!!Character methodsFor: '*ProvesCAP2019' stamp: 'jjddpp 10/3/2019 09:41'!check: aChar	| at cg |	at := (self = $A and: [ aChar = $T ]) or: [ self = $T and: [ aChar = $A ] ].	cg := (self = $C and: [ aChar = $G ]) or: [ self = $G and: [ aChar = $C ] ].	^ at or: [ cg ]	! !

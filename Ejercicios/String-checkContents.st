@@ -1,0 +1,1 @@
+'From Pharo6.0 of 13 May 2016 [Latest update: #60547] on 5 October 2019 at 12:25:17.130445 pm'!!String methodsFor: '*ProvesCAP2019' stamp: 'jjddpp 10/3/2019 09:37'!checkContents	| allowed |	allowed := #($A $T $C $G).	self do: [ :each | (allowed includes: each) ifFalse: [ ^ false] ].	^ true! !
